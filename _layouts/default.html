@@ -3,25 +3,36 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/boltonu5website/css/main.css">
+			<link rel="shortcut icon" sizes="196x196" href="{{'/assets/boltonu5.png' | relative_url }}">
+			<link rel="stylesheet" type="text/css" href="{{'/css/main.css' | relative_url }}" >
+
 		</head>
 		<body>
 			<nav>
+				<img src="{{'/assets/boltonu5.png' | relative_url }}" height="84" width="84">
 	    		<ul>
-	        		<li><a href="/boltonu5website/">Home</a></li>
-		        	<li><a href="/boltonu5website/ofstead">Ofstead</a></li>
+
+	        		<li><a href="{{'/' | relative_url}}">Home</a></li>
+		        	<li><a href="{{'/ofstead' | relative_url}}">Ofstead</a></li>
 	    		</ul>
+				<img src="{{'/assets/Ofsted_Outstanding_OP_Colour.png' | relative_url }}" height="84" width="84">
 			</nav>
 			<div class="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:info@boltonunder5s.com">email</a></li>
-	        		<li><a href="http://boltonunder5s.com">boltonunder5s.com</a></li>
-				</ul>
-			</footer>
+
 		</body>
+		<footer>
+			<ul>
+				<li>COPYRIGHT @ 2018  Bolton Under 5s Preschool,The Beddington Centre, Riley Lane,  Old Basing, Basingstoke, RG24 7DH </li>
+				<span class="content-spacer"></span>
+				<li><a href="mailto:info@boltonunder5s.com">info@boltonunder5s.com</a></li>
+				<span class="content-spacer"></span>
+				<li>Telephone: 01256 326196</li>
+				<li>REGISTERED CHARITY 1030306</li>
+				<span class="content-spacer"></span>
+			</ul>
+		</footer>
 	</html>
