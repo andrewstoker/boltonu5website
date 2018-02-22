@@ -17,6 +17,10 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
+
+#nav .active{
+    border-bottom:2px solid #bada55;
+}
 footer ul   {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 2px;
