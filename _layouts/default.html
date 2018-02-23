@@ -3,19 +3,31 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="shortcut icon" sizes="196x196" href="{{'/assets/boltonu5.png' | relative_url }}">
+			<link rel="shortcut icon" sizes="196x196" href="{{'/assets/boltonslogo.png' | relative_url }}">
 			<link rel="stylesheet" type="text/css" href="{{'/css/main.css' | relative_url }}" >
 
 		</head>
+		<header>
+			<a href="{{'/' | relative_url}}"><img src="{{'/assets/boltonu5.png' | relative_url }}" height="84" width="84"></a>
+			<h1>Bolton Under 5's Preschool</h1>
+			<a href="{{'/ofsted' | relative_url}}"> <img src="{{'/assets/Ofsted_Outstanding_OP_Colour.png' | relative_url }}" height="84" width="84"> </a>
+		</header>
 		<body>
 			<nav>
-				<img src="{{'/assets/boltonu5.png' | relative_url }}" height="84" width="84">
+
 	    		<ul id="nav">
 
-	        		<li {% if page.url == '/' %} class="active"{% endif %} ><a href="{{'/' | relative_url}}">Home</a></li>
-		        	<li {% if page.url == '/ofstead/' %} class="active"{% endif %} ><a href="{{'/ofstead' | relative_url}}">Ofstead</a></li>
+	        		<li {% if page.url == '/' %} class="active"{% endif %} ><a href="{{'/' | relative_url}}">About Us</a></li>
+					<li {% if page.url == '/contact/' %} class="active"{% endif %} ><a href="{{'/contact' | relative_url}}">Contact</a></li>
+					<li {% if page.url == '/hours/' %} class="active"{% endif %} ><a href="{{'/hours' | relative_url}}">Hours</a></li>
+					<li {% if page.url == '/learning/' %} class="active"{% endif %} ><a href="{{'/learning' | relative_url}}">Learning</a></li>
+					<li {% if page.url == '/keyperson/' %} class="active"{% endif %} ><a href="{{'/keyperson' | relative_url}}">Keyperson</a></li>
+					<li {% if page.url == '/eyfs/' %} class="active"{% endif %} ><a href="{{'/eyfs' | relative_url}}">EYFS</a></li>
+					<li {% if page.url == '/team/' %} class="active"{% endif %} ><a href="{{'/team' | relative_url}}">Team</a></li>
+                    <li {% if page.url == '/committee/' %} class="active"{% endif %} ><a href="{{'/committee' | relative_url}}">Committee</a></li>
+					<li {% if page.url == '/ofsted/' %} class="active"{% endif %} ><a href="{{'/ofsted' | relative_url}}">Ofsted</a></li>
 	    		</ul>
-				<img src="{{'/assets/Ofsted_Outstanding_OP_Colour.png' | relative_url }}" height="84" width="84">
+
 			</nav>
 			<div class="container">
 			
@@ -25,14 +37,17 @@
 
 		</body>
 		<footer>
-			<ul>
-				<li>COPYRIGHT @ 2018  Bolton Under 5s Preschool,The Beddington Centre, Riley Lane,  Old Basing, Basingstoke, RG24 7DH </li>
-				<span class="content-spacer"></span>
-				<li><a href="mailto:info@boltonunder5s.com">info@boltonunder5s.com</a></li>
-				<span class="content-spacer"></span>
-				<li>Telephone: 01256 326196</li>
-				<li>REGISTERED CHARITY 1030306</li>
-				<span class="content-spacer"></span>
-			</ul>
+			<div>
+				© 2018: Bolton Under 5s Preschool,The Beddington Centre, Riley Lane,  Old Basing, Basingstoke, RG24 7DH
+			</div>
+			<div>
+				Email:<a href="mailto:info@boltonunder5s.com">info@boltonunder5s.com</a>
+			</div>
+			<div>
+				Tel: 01256 326196
+			</div>
+			<div>
+				Registered Charity Number: 1030306
+			</div>
 		</footer>
 	</html>
